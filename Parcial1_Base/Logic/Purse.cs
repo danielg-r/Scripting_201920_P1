@@ -4,6 +4,7 @@
     {
         public Purse(int style) : base(style)
         {
+            
         }
 
         /// <summary>

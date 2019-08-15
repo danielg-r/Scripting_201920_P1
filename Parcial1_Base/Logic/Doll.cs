@@ -58,6 +58,24 @@ namespace Parcial1_Base.Logic
         /// <returns>True if the doll successfully wore the accessory. False otherwise</returns>
         public bool Wear(Accessory a)
         {
+            if (accessories.Contains(a as Dress))
+            {
+                return false;           
+            }       
+
+            if (accessories.Contains(a as Necklace))
+            {
+                for (int i = 0; i < accessories.Count; i++)
+                {
+                    if (accessories[i] is Dress)
+                    {
+                        Dress dress = a as Dress;
+                    }
+                }
+            }
+
+            else { return true; }
+
             return false;
         }
 

@@ -21,7 +21,8 @@ namespace Parcial1_Base.Logic
         /// <returns>True if the contestant could be added, False otherwise</returns>
         public bool AddContestant(Doll d)
         {
-            bool result = false;
+            
+            bool result = true;
 
             return result;
         }
